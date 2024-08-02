@@ -2,17 +2,17 @@ import streamlit as st
 import pickle
 
 # Load the trained model
-with open(r"C:\Users\shiva\LINEAR ALGEBRA\model.pkl", 'rb') as model_file:
+with open(r"model.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define the label to image path mapping
 label_to_image = {
-"sad": r"C:\Users\shiva\Downloads\—Pngtree—sad emoji_7258455.png",
-"joy":r"C:\Users\shiva\Streamlit_elite_20\streamlit\joy.png",
-"love":r"C:\Users\shiva\Streamlit_elite_20\streamlit\love.png",
-"anger":r"C:\Users\shiva\Downloads\—Pngtree—angry emoji vector icon_3720389.png",
-"fear":r"C:\Users\shiva\Streamlit_elite_20\streamlit\fear.png",
-"surprise":r"C:\Users\shiva\Streamlit_elite_20\streamlit\surprse.png"
+"sad": r"—Pngtree—sad emoji_7258455.png",
+"joy":r"joy.png",
+"love":r"love.png",
+"anger":r"—Pngtree—angry emoji vector icon_3720389.png",
+"fear":r"fear.png",
+"surprise":r"surprse.png"
 }
 
 # Set the title of the Streamlit app
